@@ -1,0 +1,118 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0" version="27.2.0">
+  <diagram name="Page-1" id="SsZbe3IK2MjjsP16fuzS">
+    <mxGraphModel dx="1426" dy="741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-1" value="Korisnik" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="380" y="260" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-2" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="260" as="sourcePoint" />
+            <mxPoint x="290" y="130" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-3" value="Zahtjev za pregled aukcije" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="310" y="100" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-4" value="Pregled dostupnosti i ostalih detalja aukcije" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="110" width="130" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-5" value="P1.1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="110" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="6yLxNvFSUKSVP-94oJZa-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="290" as="sourcePoint" />
+            <mxPoint x="225" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-7" value="Detaljnije informacije" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="230" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-8" value="Odabir i slanje licitacije" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="280" width="130" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-9" value="P1.2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="280" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="225" y="390" as="sourcePoint" />
+            <mxPoint x="225" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-11" value="Slanje informacija&lt;br&gt;&amp;nbsp;o ponudi" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="105" y="395" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-12" value="Obrada licitacije" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="450" width="130" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-13" value="P1.3" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="450" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-14" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="490" as="sourcePoint" />
+            <mxPoint x="160" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-15" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="490" as="sourcePoint" />
+            <mxPoint x="80" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-16" value="Aukcijski sustav" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-17" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Proslijedi podatke&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="70" y="470" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-18" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="6yLxNvFSUKSVP-94oJZa-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="20" y="350" as="sourcePoint" />
+            <mxPoint x="80" y="560" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="20" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-19" value="Provjerava validnost licitacije&lt;br&gt;&amp;nbsp;i šallje potvrdu" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="10" y="560" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-20" value="Obavijest o uspješnosti postavljane licitacije" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="450" width="130" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-21" value="P1.4" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="450" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-22" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="6yLxNvFSUKSVP-94oJZa-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="507.5" as="sourcePoint" />
+            <mxPoint x="460" y="502.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-23" value="&lt;font&gt;Šalje status o poslanom zahtjevu&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="300" y="480" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-24" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="6yLxNvFSUKSVP-94oJZa-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="570" y="450" as="sourcePoint" />
+            <mxPoint x="510" y="300" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="570" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6yLxNvFSUKSVP-94oJZa-25" value="Šalje obavijest potvrđene&lt;br&gt;&amp;nbsp;ili neuspješne licitacije" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="570" y="310" width="160" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

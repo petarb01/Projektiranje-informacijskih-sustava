@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0" version="27.2.0">
+  <diagram name="Page-1" id="33_wprqUSU9htLPHV4WX">
+    <mxGraphModel dx="1426" dy="741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eo-p4hevJvaf4zlIZjcX-1" value="Aukcija" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="340" y="330" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="eo-p4hevJvaf4zlIZjcX-2" value="Administrator" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eo-p4hevJvaf4zlIZjcX-3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="396.86" as="sourcePoint" />
+            <mxPoint x="340" y="397" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eo-p4hevJvaf4zlIZjcX-4" value="Upravljanje aukcijama, korisnicima,&amp;nbsp;&lt;br&gt;platformom i podacima" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="140" y="403" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eo-p4hevJvaf4zlIZjcX-5" value="Korisnik&lt;br&gt;(Kupac)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eo-p4hevJvaf4zlIZjcX-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.142;exitY=1.033;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.208;entryY=0.115;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="359.99999999999994" y="130.00000000000003" as="sourcePoint" />
+            <mxPoint x="364.99999999999994" y="342.97" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eo-p4hevJvaf4zlIZjcX-7" value="Registracija, prijava,&lt;br&gt;pretraga, pregled&lt;br&gt;Licitacija, potvrda" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="190" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eo-p4hevJvaf4zlIZjcX-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.142;exitY=1.033;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.208;entryY=0.115;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="445" y="342.97" as="sourcePoint" />
+            <mxPoint x="440" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eo-p4hevJvaf4zlIZjcX-9" value="Prikaz licitacija, povijest aukcija&lt;br&gt;potvrde, obavijesti" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" y="200" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eo-p4hevJvaf4zlIZjcX-10" value="Korisnik&lt;br&gt;(Prodavač)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eo-p4hevJvaf4zlIZjcX-11" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="380" as="sourcePoint" />
+            <mxPoint x="470" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eo-p4hevJvaf4zlIZjcX-12" value="Registracija, prijava&lt;br&gt;objavljivanje, pregled, prekidanje aukcije, podaci" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="340" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eo-p4hevJvaf4zlIZjcX-13" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.008;entryY=0.867;entryDx=0;entryDy=0;exitX=0.969;exitY=0.715;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="eo-p4hevJvaf4zlIZjcX-1" target="eo-p4hevJvaf4zlIZjcX-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="461.03" y="422.04999999999995" as="sourcePoint" />
+            <mxPoint x="690" y="405" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eo-p4hevJvaf4zlIZjcX-14" value="Potvrde, obavijesti, informacije" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="480" y="430" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eo-p4hevJvaf4zlIZjcX-15" value="Sustav za plaćanje" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eo-p4hevJvaf4zlIZjcX-16" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="405" y="629" as="sourcePoint" />
+            <mxPoint x="405" y="463" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eo-p4hevJvaf4zlIZjcX-17" value="Potvrda transakcija,&amp;nbsp;&lt;br&gt;uplata, isplata" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="400" y="520" width="130" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
