@@ -1,0 +1,251 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0" version="27.2.0">
+  <diagram name="Klasni dijagram - Online Aukcija" id="auction-class-diagram">
+    <mxGraphModel dx="1426" dy="741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="korisnik-class" value="Korisnik" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="50" y="50" width="220" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="korisnik-attrs" value="- korisnikId: int&#xa;- username: string&#xa;- email: string&#xa;- lozinkaHash: string&#xa;- ime: string&#xa;- prezime: string&#xa;- broj: string&#xa;- ocjena: decimal&#xa;- isAdmin: boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="korisnik-class" vertex="1">
+          <mxGeometry y="26" width="220" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="korisnik-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="korisnik-class" vertex="1">
+          <mxGeometry y="170" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="korisnik-methods" value="+ registrujSe(): void&#xa;+ prijaviSe(): void&#xa;+ odjaviSe(): void&#xa;+ ažurirajProfil(): void&#xa;+ kreirajAukciju(): Aukcija&#xa;+ licitiraj(): Licitacija&#xa;+ dodajUWatchlist(): void&#xa;+ dajFeedback(): Feedback&#xa;+ izračunajOcjenu(): decimal" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="korisnik-class" vertex="1">
+          <mxGeometry y="178" width="220" height="172" as="geometry" />
+        </mxCell>
+        <mxCell id="aukcija-class" value="Aukcija" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="350" y="50" width="240" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="aukcija-attrs" value="- aukcijaId: int&#xa;- prodavacId: int&#xa;- artikalId: int&#xa;- početnaCijena: decimal&#xa;- minimalnaCijena: decimal&#xa;- trenutnaNajvećaLicitacija: decimal&#xa;- početnoVrijeme: datetime&#xa;- vrijemeZavršetka: datetime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="aukcija-class" vertex="1">
+          <mxGeometry y="26" width="240" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="aukcija-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="aukcija-class" vertex="1">
+          <mxGeometry y="150" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="aukcija-methods" value="+ pokreniAukciju(): void&#xa;+ završiAukciju(): void&#xa;+ prihvatiLicitaciju(): boolean&#xa;+ ažurirajTrenutnuCijenu(): void&#xa;+ provjeriVrijeme(): boolean&#xa;+ dajNajvećuLicitaciju(): Licitacija&#xa;+ dajSveLicitacije(): List&lt;Licitacija&gt;&#xa;+ produži(): void&#xa;+ otkaži(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="aukcija-class" vertex="1">
+          <mxGeometry y="158" width="240" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="artikal-class" value="Artikal" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="630" y="60" width="220" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="artikal-attrs" value="- artikalId: int&#xa;- naziv: string&#xa;- opis: text&#xa;- kategorija: string&#xa;- stanjeArtikla: string&#xa;- procijenjenaVrijednost: decimal&#xa;- brend: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="artikal-class" vertex="1">
+          <mxGeometry y="26" width="220" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="artikal-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="artikal-class" vertex="1">
+          <mxGeometry y="140" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="artikal-methods" value="+ dodajSliku(): void&#xa;+ ukloniSliku(): void&#xa;+ ažurirajOpis(): void&#xa;+ postaviKategoriju(): void&#xa;+ validirajStanje(): boolean&#xa;+ izračunajProcjenu(): decimal&#xa;+ dajSlike(): List&lt;Slika&gt;&#xa;+ dajPrimarnaSlika(): Slika" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="artikal-class" vertex="1">
+          <mxGeometry y="148" width="220" height="152" as="geometry" />
+        </mxCell>
+        <mxCell id="licitacija-class" value="Licitacija" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="50" y="450" width="220" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="licitacija-attrs" value="- licitacijaId: int&#xa;- aukcijaId: int&#xa;- licitatorId: int&#xa;- vrijednostLicitacije: decimal&#xa;- vrijemeLicitacije: datetime&#xa;- isPobjeduje: boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="licitacija-class" vertex="1">
+          <mxGeometry y="26" width="220" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="licitacija-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="licitacija-class" vertex="1">
+          <mxGeometry y="120" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="licitacija-methods" value="+ pošaljiLicitaciju(): boolean&#xa;+ validirajLicitaciju(): boolean&#xa;+ označiKaoPobjednu(): void&#xa;+ otkaži(): void&#xa;+ dajDetalje(): string&#xa;+ porediSa(): int&#xa;+ provjeriValidnost(): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="licitacija-class" vertex="1">
+          <mxGeometry y="128" width="220" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="uplata-class" value="Uplata" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="350" y="450" width="220" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="uplata-attrs" value="- naplataId: int&#xa;- aukcijaId: int&#xa;- prodavacId: int&#xa;- kupacId: int&#xa;- kolicina: decimal&#xa;- nacinPlacanja: string&#xa;- status: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="uplata-class" vertex="1">
+          <mxGeometry y="26" width="220" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="uplata-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="uplata-class" vertex="1">
+          <mxGeometry y="140" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="uplata-methods" value="+ processirajUplatu(): boolean&#xa;+ otkaži(): void&#xa;+ potvrdi(): void&#xa;+ generirajRačun(): string&#xa;+ provjeriStatus(): string&#xa;+ ažurirajStatus(): void&#xa;+ pošaljiObavještenje(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="uplata-class" vertex="1">
+          <mxGeometry y="148" width="220" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="kategorija-class" value="Kategorija" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="950" y="50" width="200" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="kategorija-attrs" value="- categoryId: int&#xa;- nazivKategorije: string&#xa;- opis: string&#xa;- isAktivna: boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="kategorija-class" vertex="1">
+          <mxGeometry y="26" width="200" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="kategorija-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="kategorija-class" vertex="1">
+          <mxGeometry y="90" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="kategorija-methods" value="+ dodajKategoriju(): void&#xa;+ ukloniKategoriju(): void&#xa;+ ažuriraj(): void&#xa;+ aktiviraj(): void&#xa;+ deaktiviraj(): void&#xa;+ dajArtikle(): List&lt;Artikal&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="kategorija-class" vertex="1">
+          <mxGeometry y="98" width="200" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="slika-class" value="Slika" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="650" y="450" width="200" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="slika-attrs" value="- slikaId: int&#xa;- artikalId: int&#xa;- slikaUrl: string&#xa;- altText: string&#xa;- displayOrder: int&#xa;- isPrimary: boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="slika-class" vertex="1">
+          <mxGeometry y="26" width="200" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="slika-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="slika-class" vertex="1">
+          <mxGeometry y="120" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="slika-methods" value="+ učitajSliku(): void&#xa;+ obrišiSliku(): void&#xa;+ ažurirajUrl(): void&#xa;+ postaviKaoPrimarnu(): void&#xa;+ promijenjiRedoslijed(): void&#xa;+ kompresuj(): void&#xa;+ validiraj(): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="slika-class" vertex="1">
+          <mxGeometry y="128" width="200" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="watchlist-class" value="Watchlist" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="950" y="320" width="200" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="watchlist-attrs" value="- watchlistId: int&#xa;- korisnikId: int&#xa;- aukcijaId: int&#xa;- vrijemeDodavanja: datetime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="watchlist-class" vertex="1">
+          <mxGeometry y="26" width="200" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="watchlist-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="watchlist-class" vertex="1">
+          <mxGeometry y="90" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="watchlist-methods" value="+ dodajAukciju(): void&#xa;+ ukloniAukciju(): void&#xa;+ dajSveAukcije(): List&lt;Aukcija&gt;&#xa;+ provjeriIstekle(): void&#xa;+ pošaljiObavještenja(): void&#xa;+ očisti(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="watchlist-class" vertex="1">
+          <mxGeometry y="98" width="200" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="feedback-class" value="Feedback" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="950" y="580" width="200" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="feedback-attrs" value="- feedbackId: int&#xa;- aukcijaId: int&#xa;- ocjenivacId: int&#xa;- evaluiraniId: int&#xa;- ocjena: int&#xa;- komentar: text&#xa;- feedbackTip: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="feedback-class" vertex="1">
+          <mxGeometry y="26" width="200" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="feedback-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="feedback-class" vertex="1">
+          <mxGeometry y="140" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="feedback-methods" value="+ dajFeedback(): void&#xa;+ ažurirajFeedback(): void&#xa;+ obrišiFeedback(): void&#xa;+ validirajOcjenu(): boolean&#xa;+ moderaj(): void&#xa;+ označiKaoNeprikladan(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="feedback-class" vertex="1">
+          <mxGeometry y="148" width="200" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="korisnik-aukcija" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="korisnik-class" target="aukcija-attrs" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="115" as="sourcePoint" />
+            <mxPoint x="350" y="115" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="korisnik-aukcija-label1" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="270" y="110" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="korisnik-aukcija-label2" value="0..*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="310" y="110" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aukcija-artikal" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="aukcija-class" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="115" as="sourcePoint" />
+            <mxPoint x="630" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aukcija-artikal-label1" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="580" y="110" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aukcija-artikal-label2" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="610" y="110" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="artikal-kategorija" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.228;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="artikal-attrs" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="870" y="115" as="sourcePoint" />
+            <mxPoint x="953" y="112" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="artikal-kategorija-label1" value="0..*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="840" y="125" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="artikal-kategorija-label2" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="930" y="125" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="korisnik-licitacija" value="" style="endArrow=none;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="korisnik-class" target="licitacija-class" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="105" y="400" as="sourcePoint" />
+            <mxPoint x="105" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="korisnik-licitacija-label1" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="105" y="400" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="korisnik-licitacija-label2" value="0..*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="105" y="430" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m6XZdLgh-sVgqCkXabtv-1" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="50" as="sourcePoint" />
+            <mxPoint x="920" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6XZdLgh-sVgqCkXabtv-2" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="270" y="20" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m6XZdLgh-sVgqCkXabtv-5" value="0..*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="910" y="400" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m6XZdLgh-sVgqCkXabtv-6" value="0..*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="910" y="340" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m6XZdLgh-sVgqCkXabtv-7" value="" style="endArrow=none;html=1;rounded=0;entryX=1.05;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="m6XZdLgh-sVgqCkXabtv-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="880" y="50" as="sourcePoint" />
+            <mxPoint x="930" y="185" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="880" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6XZdLgh-sVgqCkXabtv-8" value="" style="endArrow=none;html=1;rounded=0;entryX=0.975;entryY=0.667;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="m6XZdLgh-sVgqCkXabtv-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="920" y="50" as="sourcePoint" />
+            <mxPoint x="960" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="920" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6XZdLgh-sVgqCkXabtv-9" value="" style="endArrow=none;html=1;rounded=0;exitX=0.3;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.368;entryY=1.026;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="slika-class" target="artikal-methods">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="660" y="420" as="sourcePoint" />
+            <mxPoint x="710" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6XZdLgh-sVgqCkXabtv-10" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="710" y="370" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m6XZdLgh-sVgqCkXabtv-11" value="0..*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="710" y="420" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m6XZdLgh-sVgqCkXabtv-12" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="aukcija-class">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="450" as="sourcePoint" />
+            <mxPoint x="320" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6XZdLgh-sVgqCkXabtv-13" value="0..*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="270" y="440" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m6XZdLgh-sVgqCkXabtv-14" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="340" y="370" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m6XZdLgh-sVgqCkXabtv-15" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="uplata-class">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="420" as="sourcePoint" />
+            <mxPoint x="460" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6XZdLgh-sVgqCkXabtv-16" value="0..1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="460" y="420" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m6XZdLgh-sVgqCkXabtv-17" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="460" y="370" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m6XZdLgh-sVgqCkXabtv-18" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=-0.005;exitY=0.074;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="feedback-class" target="aukcija-class">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="870" y="540" as="sourcePoint" />
+            <mxPoint x="760" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="870" y="600" />
+              <mxPoint x="870" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6XZdLgh-sVgqCkXabtv-19" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="590" y="370" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m6XZdLgh-sVgqCkXabtv-20" value="0..*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="910" y="570" width="40" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
